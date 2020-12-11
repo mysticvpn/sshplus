@@ -9,12 +9,12 @@ IP = '0.0.0.0'
 try:
    PORT = int(sys.argv[1])
 except:
-   PORT = 8010
+   PORT = 8080
 PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
 MSG = 'MysticVPN'
-DEFAULT_HOST = '0.0.0.0:1194'
+DEFAULT_HOST = '0.0.0.0:8010'
 RESPONSE = "HTTP/1.1 200 " + str(MSG) + "\r\n\r\n"
 
 class Server(threading.Thread):
